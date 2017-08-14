@@ -1,11 +1,7 @@
-html{
+html, body{
 	margin: 0;
 	padding: 0;
-}
-
-body{
-	margin: 0;
-	padding: 0;
+	height: 100%;
 }
 
 #landing{
@@ -19,19 +15,50 @@ body{
 		width: inherit;
 		height: 48.5%;
 		display: flex;
+		position: relative;
+
+		&.row-black{
+			background: black;
+			background-color: black;
+		}
+
+		&.row-red{
+			background: #990100;
+			background-color: #990100;
+		}
+
+		&.hide-logo{
+			z-index: 20;
+		}
+
+		&.row-white{
+			background: white;
+			background-color: white;
+		}
 
 		.circle{
 
 			margin: 0 auto;
 			position: relative;
 			top: 100px;
-			border: 1px solid black;
+			border: 3px solid black;
 			padding: 50px 50px 50px 50px;
 			border-radius: 200px;
 			height: 50px;
 			width: 50px;
 			text-align: center;
+			// background: #990100;
+			background-color: #990100;
 
+			span{
+				padding: 10px;
+			}
+
+		}
+
+		.logo{
+			z-index: 10;
+			top: 800px;
 		}
 	}
 }
