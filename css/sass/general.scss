@@ -55,8 +55,25 @@ html, body{
 
 		width: inherit;
 		height: 99.99999%;
-		display: flex;
+		display: block;
 		position: relative;
+
+		&.col-left{
+		    height: 70%;
+		    width: 45%;
+		    display: inline-block;
+		    margin: 0;
+		    padding: 0;
+		    float: left;
+		}
+
+		&.col-right{
+			height: 70%;
+    		width: 45%;
+ 		   	display: inline-block;
+    		margin: 0;
+    		padding: 0;
+		}
 
 		&.row-black{
 			background: black;
@@ -98,6 +115,7 @@ html, body{
 			text-align: center;
 			// background: #990100;
 			background-color: #990100;
+			clear: both;
 
 			span{
 				padding: 0;
@@ -113,6 +131,32 @@ html, body{
 		.logo{
 			z-index: 10;
 			top: 800px;
+		}
+
+		.arrow{
+			display: block;
+			position: relative;
+			top: -200px;
+			text-align: center;
+
+			a {
+				width: 50px;
+				height: 100px;
+				display: block;
+    			text-align: center;
+    			margin: 0 auto;
+
+				&.arrow-img{
+					background-image: url('../../img/iconmonstr-arrow-28.svg');
+					background-repeat: no-repeat;
+					background-size: 50px 100px;
+					-webkit-transform: rotate(90deg);
+					-moz-transform: rotate(90deg);
+					-ms-transform: rotate(90deg);
+					-o-transform: rotate(90deg);
+				}
+
+			}
 		}
 	}
 }
